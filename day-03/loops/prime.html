@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<header>
+    <title>Prime</title>
+</header>
+<body>
+    <script>
+        let n = +prompt('Enter a number',2); n=5
+        n1=n;
+        for(let i=2;i<=n;i++){
+        let np =false;
+            check: for(let j=2;j<=i;j++){
+                if(i%j==0 && j!=i){
+                    np = true;
+                    break check;
+                }  
+                }
+                if(np==false)
+                    alert(i);
+            }
+    </script>
+</body>
+</html>
+
+
+
