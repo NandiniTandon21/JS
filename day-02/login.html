@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<header>
+    <title>
+        Check the login
+    </title>
+</header>
+<body>
+    <script>
+        let user = prompt('Login: Who\'s there?','');
+        if(user === 'Admin'){
+            let password = prompt('Password?','');
+            if(password === 'TheMaster'){
+                alert('Welcome!');
+            }
+            else if(password === '' || password === null){
+                alert('Canceled');
+            }
+            else{
+                alert('Wrong password');
+            }
+        }
+        else if(user === '\n' || user === '' || user === null){
+            alert('Canceled');
+        }
+        else{
+            alert('I don\'t know you')
+        }
+
+    </script>
+</body>
+</html>
